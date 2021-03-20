@@ -29,49 +29,40 @@
 </head>
 
 <body>
-    <button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>
+    <div id="jumpToMicroAPP">
+        <!-- js生成按钮 -->
+    </div>
     <div>
         <a href="https://gitee.com/zhaoquan/sms-jump-microapp">Gitee</a>
     </div>
 </body>
+
 <script>
-    // 参考链接：https://blog.csdn.net/weixin_42895400/article/details/87799262
-    //如果没有正常打开应用则认为没有这个app，将跳转到预先设置的下载页面
-    function openWithApp(id) {
-        //微信小程序 Url Schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
-        let scheme = "weixin://dl/business/?t=SaTNUASbkUv", // 需要打开的app scheme 地址
-            iosDownloadURL = "https://weixin.qq.com/", // 如果打开scheme失效的app下载地址
-            aosDownloadURL = "https://weixin.qq.com/",
-            ua = navigator.userAgent,
-            isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-            isAOS = ua.indexOf("Android") > -1 || ua.indexOf("linus") > -1,
-            localDoc = document,
-            localLocation = window.location,
-            downloadTimer;
+    // 用js实现在加载完成一个页面后自动执行一个方法
+    window.onload = async function () {
+        console.log("执行了")
+        //微信小程序 Url schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
+        let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
 
         // 尝试打开 scheme
-        localLocation.href = scheme;
+        window.location.href = scheme;
 
-        // 设置3秒的定时下载任务，3秒之后下载app
-        downloadTimer = setTimeout(function () {
-            if (isAOS) {
-                localLocation.href = aosDownloadURL;
-            } else if (isIOS) {
-                localLocation.href = iosDownloadURL;
-            }
-        }, 3000);
+        // 3秒后显示按钮
+        let downloadTimer = setTimeout(function () {
+            let html = `<button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>`
+            document.getElementById('jumpToMicroAPP').innerHTML = html;
+        }, 4000);
+    }
+</script>
 
-        localDoc.addEventListener("visibilitychange webkitvisibilitychange", function () {
+<script>
+    // 参考链接：https://blog.csdn.net/weixin_42895400/article/details/87799262
+    function openWithApp(id) {
+        //微信小程序 Url Schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
+        let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
 
-            // 如果页面隐藏，推测打开scheme成功，清除下载任务
-            if (localDoc.hidden || localDoc.webkitHidden) {
-                clearTimeout(downloadTimer);
-            }
-        });
-
-        window.addEventListener("pagehide", function () {
-            clearTimeout(downloadTimer);
-        });
+        // 尝试打开 scheme
+        window.location.href = scheme;
     }
 </script>
 
