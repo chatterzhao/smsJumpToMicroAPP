@@ -29,7 +29,9 @@
 </head>
 
 <body>
-    <button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>
+    <div id="jumpToMicroAPP">
+        <!-- js生成按钮 -->
+    </div>
     <div>
         <a href="https://gitee.com/zhaoquan/sms-jump-microapp">Gitee</a>
     </div>
@@ -38,11 +40,18 @@
 <script>
     // 用js实现在加载完成一个页面后自动执行一个方法
     window.onload = async function () {
+        console.log("执行了")
         //微信小程序 Url schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
         let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
 
         // 尝试打开 scheme
         window.location.href = scheme;
+
+        // 3秒后显示按钮
+        let downloadTimer = setTimeout(function () {
+            let html = `<button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>`
+            document.getElementById('jumpToMicroAPP').innerHTML = html;
+        }, 3000);
     }
 </script>
 
