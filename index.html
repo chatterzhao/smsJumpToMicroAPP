@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
     <title>确认打开微信小程序</title>
+    <style type="text/css">
+        .btn {
+            display: inline-block;
+            position: fixed;
+            padding: 15px 32px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #27ae60;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border: none;
+
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
     <button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>
+    <div>
+        <a href="https://gitee.com/zhaoquan/sms-jump-microapp">Gitee</a>
+    </div>
 </body>
 <script>
     // 参考链接：https://blog.csdn.net/weixin_42895400/article/details/87799262
