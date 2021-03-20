@@ -34,6 +34,18 @@
         <a href="https://gitee.com/zhaoquan/sms-jump-microapp">Gitee</a>
     </div>
 </body>
+
+<script>
+    // 用js实现在加载完成一个页面后自动执行一个方法
+    window.onload = async function () {
+        //微信小程序 Url schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
+        let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
+
+        // 尝试打开 scheme
+        window.location.href = scheme;
+    }
+</script>
+
 <script>
     // 参考链接：https://blog.csdn.net/weixin_42895400/article/details/87799262
     //如果没有正常打开应用则认为没有这个app，将跳转到预先设置的下载页面
