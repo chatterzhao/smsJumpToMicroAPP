@@ -11,4 +11,4 @@
 #### 项目使用
 - clone 到本地
 - 替换 Url Schema
-- 上传到网站服务器，推荐码云的pages，切换到show 分支，点右上角的【服务】-【Gitee Pages】把网站发布，勾选强制Https
+- 上传到网站服务器，推荐码云的pages，切换到show 分支，点右上角的【服务】-【Gitee Pages】把网站发布，勾选强制Https，复制网站网址，使用短网址平台把网址短化一下（短信按字数收费），可以使用百度https://dwz.cn/，或https://4m.cn/进行短化，然后在短信里使用即可
