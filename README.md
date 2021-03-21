@@ -24,7 +24,7 @@ scheme 可以登录自己的小程序后台：[mp.weixin.qq.com](mp.weixin.qq.co
 
 - 将 index.html 上传到网站服务器，推荐码云的 pages
 
-在码云打开本项目页面，点页面右上角的【服务】，点下面的 Gitee Pages， 我这里是发布 show 分支，部署分支选择 show，勾选强制使用 HTTPS，点发布或更新，过一会而，点击 Gitee 分配的域名即可访问。
+在码云打开本项目页面，点页面右上角的【服务】，点下面的 Gitee Pages， 我这里是发布 show 分支，部署分支选择 show，勾选强制使用 HTTPS，点发布或更新，过一会儿，点击 Gitee 分配的域名即可访问。
 
 - 网址短化
 
