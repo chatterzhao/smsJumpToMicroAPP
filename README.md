@@ -1,6 +1,6 @@
 # smsJumpToMicroAPP
 
-> 本项目同时发布到【[码云](https://gitee.com/zhaoquan/sms-jump-microapp)】和【[GitHub](https://github.com/chatterzhao/smsJumpMicroAPP)】，但是主要维护码云，GitHub 上只保证 develop 分支与码云的 develop 分支同步
+> 本项目同时发布到【[码云](https://gitee.com/zhaoquan/sms-jump-to-microapp)】和【[GitHub](https://github.com/chatterzhao/smsJumptoMicroAPP)】，但是主要维护码云，GitHub 上只保证 develop 分支与码云的 develop 分支同步
 
 ## 介绍
 
@@ -8,7 +8,7 @@
 
 以下示例主要是从短信内容通过 H5 网页中转打开微信小程序，用 H5 中转是因为安卓手机不能正确的识别 Url Scheme。
 
-体验网址：[https://zhaoquan.gitee.io/sms-jump-microapp/](https://zhaoquan.gitee.io/sms-jump-microapp/)，网址短化后：[https://dwz.cn/26Ozwr5b](https://dwz.cn/26Ozwr5b) (请在非微信环境测试，如手机自带的浏览器中。注意：在微信聊天信息是无法打开的，百度手机 APP 也不可以正常打开)
+体验网址：[https://zhaoquan.gitee.io/sms-jump-to-microapp/](https://zhaoquan.gitee.io/sms-jump-to-microapp/)，网址短化后：[https://dwz.cn/26Ozwr5b](https://dwz.cn/26Ozwr5b) (请在非微信环境测试，如手机自带的浏览器中。注意：在微信聊天信息是无法打开的，百度手机 APP 也不可以正常打开)
 
 ## 本项目特点
 
@@ -21,7 +21,7 @@
 
 - clone（克隆）或下载或复制代码到本地
 
-clone 的话在命令行执行命令： `git clone https://gitee.com/zhaoquan/sms-jump-microapp`
+clone 的话在命令行执行命令： `git clone https://gitee.com/zhaoquan/sms-jump-to-microapp`
 
 本项目有 3 个分支，master 是稳定的分支，develop 是开发分支，show 是 master 发布到网站的分支。你想要哪个分支，就在命令行，执行命令： `git checkout 分支名`，或者直接在网站上点击分支名进行切换。
 
