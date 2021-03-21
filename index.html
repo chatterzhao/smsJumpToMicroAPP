@@ -42,7 +42,7 @@
     // 用js实现在加载完成一个页面后自动执行一个方法
     window.onload = async function () {
         console.log("执行了")
-        //微信小程序 Url schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
+        //微信小程序 Url Scheme 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
         let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
 
         // 尝试打开 scheme
@@ -59,7 +59,7 @@
 <script>
     // 参考链接：https://blog.csdn.net/weixin_42895400/article/details/87799262
     function openWithApp(id) {
-        //微信小程序 Url Schema 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
+        //微信小程序 Url Scheme 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
         let scheme = "weixin://dl/business/?t=SaTNUASbkUv" // 需要打开的app scheme 地址
 
         // 尝试打开 scheme
