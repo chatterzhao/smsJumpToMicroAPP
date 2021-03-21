@@ -8,13 +8,13 @@
 
 以下示例主要是从短信内容通过 H5 网页中转打开微信小程序，用 H5 中转是因为安卓手机不能正确的识别 Url Scheme。
 
-体验网址：[https://zhaoquan.gitee.io/sms-jump-to-microapp/](https://zhaoquan.gitee.io/sms-jump-to-microapp/)，网址短化后：[https://dwz.cn/26Ozwr5b](https://dwz.cn/26Ozwr5b) (请在非微信环境测试，如手机自带的浏览器中。注意：在微信聊天信息是无法打开的，百度手机 APP 也不可以正常打开)
+体验网址：[https://zhaoquan.gitee.io/sms-jump-to-microapp/](https://zhaoquan.gitee.io/sms-jump-to-microapp/)，网址短化后：[https://dwz.cn/pF85DVgh](https://dwz.cn/pF85DVgh) (这里用的是百度的 dwz.cn，每月 100 次免费跳转，如果跳转不正常，请自己复制原网址到其它平台短化之后测试使用。请在非微信环境测试，如手机自带的浏览器中。注意：在微信聊天信息是无法打开的，百度手机 APP 也不可以正常打开)
 
 ## 本项目特点
 
 - 只使用一个代码文件：index.html
 - 只用修改 let scheme="XXXX"（有两个地方）即可使用
-- 使用码云平台的 Gitee Pages 免费快速即可发布测试网站
+- 使用[码云](https://www.gitee.com)平台的 Gitee Pages 免费快速即可发布测试网站
 - 使用一个网址短化平台将网址短化就可以比较方便的在群发短信中使用这个网址
 
 ## 项目使用
