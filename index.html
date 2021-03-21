@@ -7,25 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
     <title>确认打开微信小程序</title>
-    <style type="text/css">
-        .btn {
-            display: inline-block;
-            position: fixed;
-            padding: 15px 32px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #27ae60;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border: none;
-
-            color: white;
-            font-size: 18px;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -41,7 +22,6 @@
 <script>
     // 用js实现在加载完成一个页面后自动执行一个方法
     window.onload = async function () {
-        console.log("执行了")
         //微信小程序 Url Scheme 可以到mp.weixin.qq.com 小程序后台右上角，工具下生成，另外也可以通过接口生成
         let scheme = "weixin://dl/business/?t=8ixV32RuXKf" // 需要打开的app scheme 地址
 
@@ -52,7 +32,7 @@
         let downloadTimer = setTimeout(function () {
             let html = `<button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>`
             document.getElementById('jumpToMicroAPP').innerHTML = html;
-        }, 4000);
+        }, 3000);
     }
 </script>
 
@@ -66,5 +46,24 @@
         window.location.href = scheme;
     }
 </script>
+<style type="text/css">
+    .btn {
+        display: inline-block;
+        position: fixed;
+        padding: 15px 32px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #27ae60;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: none;
+
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+    }
+</style>
 
 </html>
