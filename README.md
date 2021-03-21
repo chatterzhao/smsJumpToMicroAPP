@@ -1,5 +1,7 @@
 # smsJumpToMicroAPP
 
+> 本项目同时发布到【[码云](https://gitee.com/zhaoquan/sms-jump-microapp)】和【[GitHub](https://github.com/chatterzhao/smsJumpMicroAPP)】，但是主要维护码云，GitHub 上只保证 develop 分支与码云的 develop 分支同步
+
 ## 介绍
 
 从短信、邮件等信息内容中的链接打开小程序
