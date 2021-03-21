@@ -28,11 +28,11 @@
         // 尝试打开 scheme
         window.location.href = scheme;
 
-        // 3秒后显示按钮
+        // 2秒后显示按钮
         let downloadTimer = setTimeout(function () {
             let html = `<button class="btn" id="openBtn" onclick="openWithApp()">点击打开微信小程序</button>`
             document.getElementById('jumpToMicroAPP').innerHTML = html;
-        }, 3000);
+        }, 2000);
     }
 </script>
 
